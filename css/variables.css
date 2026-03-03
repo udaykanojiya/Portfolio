@@ -1,0 +1,33 @@
+/* css/variables.css */
+:root {
+    /* Color Palette */
+    --bg-primary: #0A0F1C; /* Deep Navy */
+    --bg-secondary: #050812; /* Darker near black */
+    --bg-tertiary: rgba(10, 15, 28, 0.7); /* Glassmorphism base */
+    
+    --accent-blue: #3B82F6; /* Electric Blue */
+    --accent-blue-glow: rgba(59, 130, 246, 0.5);
+    
+    --accent-purple: #8B5CF6;
+    --accent-purple-glow: rgba(139, 92, 246, 0.4);
+
+    --text-primary: #FFFFFF;
+    --text-secondary: #A0AEC0;
+    --text-muted: #718096;
+
+    /* Typography */
+    --font-main: 'Inter', sans-serif;
+    
+    /* Layout */
+    --max-width: 1200px;
+    --nav-height: 80px;
+
+    /* Borders & Shadows */
+    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --glow-shadow: 0 0 15px var(--accent-blue-glow);
+
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-smooth: 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+}

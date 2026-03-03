@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uday Kanojiya | Backend Developer & AI System Builder</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">U.K.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Canvas for background particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Sections will go here -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero fullscreen hero-split">
+            <div class="hero-content">
+                <h1 class="hero-title fade-up text-center">Uday Kanojiya</h1>
+                <h2 class="hero-subtitle fade-up staggered-1 text-center">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-tagline fade-up staggered-2 text-center">Backend Developer | AI Enthusiast | System
+                    Architect | NCC SUO</p>
+                <p class="hero-intro fade-up staggered-3 text-center">
+                    Disciplined and high-performing Computer Science undergraduate (CGPA 8.22) focused on building
+                    scalable backend systems and intelligent automation solutions.
+                </p>
+                <div class="hero-cta fade-up staggered-4">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#resume" class="btn btn-secondary">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-up staggered-5">
+                <div class="portrait-container glow-on-hover">
+                    <img src="css/assets/profile.jpeg" alt="Uday Kanojiya Portrait" class="portrait-img">
+                </div>
+            </div>
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content reveal" style="animation-name: slideInLeft;">
+                    <p>I am a Computer Science undergraduate at <strong>Baderia Global Institute of Engineering and
+                            Management</strong> with a CGPA of <strong>8.22</strong>.</p>
+                    <p>I specialize in backend development using <strong>Python, FastAPI, and MongoDB</strong>, focusing
+                        on scalable architectures and structured system design.</p>
+                    <p>Through projects like a synthetic data marketplace and an intelligent voice automation system, I
+                        have developed strong problem-solving and system-building skills.</p>
+                    <p>Beyond technology, I serve as a <strong>Senior Under Officer (SUO)</strong> in NCC, the highest
+                        cadet rank in my unit, where I developed leadership, discipline, and decision-making under
+                        pressure. I also attended the prestigious IMA Attachment Camp.</p>
+                </div>
+                <div class="about-visual reveal">
+                    <img src="css/assets/banner1.jpeg" style="height: 400px;" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <h2 class="section-title reveal">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot glow-on-hover"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology (Computer Science)</h3>
+                        <h4>Baderia Global Institute of Engineering and Management</h4>
+                        <p class="timeline-date">Present</p>
+                        <p class="timeline-details">CGPA: 8.22</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot glow-on-hover"></div>
+                    <div class="timeline-content">
+                        <h3>Class 12 Board Examination</h3>
+                        <h4>Government Model High School, Jabalpur</h4>
+                        <p class="timeline-date">Completed</p>
+                        <p class="timeline-details">Percentage: 94.4% (District Topper)</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot glow-on-hover"></div>
+                    <div class="timeline-content">
+                        <h3>Class 10 Board Examination</h3>
+                        <h4>Government Model High School, Jabalpur</h4>
+                        <p class="timeline-date">Completed</p>
+                        <p class="timeline-details">Percentage: 97%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2 class="section-title reveal">Technical Arsenal</h2>
+            <div class="skills-container">
+                <div class="skill-category reveal">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag glow-on-hover">Python</span>
+                        <span class="skill-tag glow-on-hover">FastAPI</span>
+                        <span class="skill-tag glow-on-hover">JavaScript</span>
+                        <span class="skill-tag glow-on-hover">SQL</span>
+                        <span class="skill-tag glow-on-hover">MongoDB</span>
+                        <span class="skill-tag glow-on-hover">Database Design</span>
+                        <span class="skill-tag glow-on-hover">HTML & CSS</span>
+                        <span class="skill-tag glow-on-hover">Git & GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal staggered-1">
+                    <h3>Systems & Backend</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag glow-on-hover">Backend Architecture</span>
+                        <span class="skill-tag glow-on-hover">REST API Development</span>
+                        <span class="skill-tag glow-on-hover">Authentication Systems</span>
+                        <span class="skill-tag glow-on-hover">Database Structuring</span>
+                        <span class="skill-tag glow-on-hover">Secure Data Handling</span>
+                        <span class="skill-tag glow-on-hover">Automation Logic</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal staggered-2">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag glow-on-hover">Leadership & Team Mgmt</span>
+                        <span class="skill-tag glow-on-hover">Strategic Thinking</span>
+                        <span class="skill-tag glow-on-hover">Public Speaking</span>
+                        <span class="skill-tag glow-on-hover">Time Management</span>
+                        <span class="skill-tag glow-on-hover">Problem Solving</span>
+                        <span class="skill-tag glow-on-hover">Decision Making</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-block reveal">
+                    <div class="project-content">
+                        <h3>DataTrustX</h3>
+                        <p class="role">Backend Developer & System Designer</p>
+                        <p class="project-desc">A privacy-focused synthetic data marketplace platform designed to enable
+                            secure and ethical data exchange.</p>
+                        <ul class="project-highlights">
+                            <li>API-driven backend architecture</li>
+                            <li>Structured database modeling</li>
+                            <li>Secure transaction workflows</li>
+                            <li>Scalable system design principles</li>
+                        </ul>
+                        <div class="tech-stack-tags">
+                            <span>Python</span><span>FastAPI</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Alternate layout handled via CSS or just flex-direction) -->
+                <div class="project-block reverse reveal">
+                    <div class="project-content">
+                        <h3>Cypher</h3>
+                        <p class="role">AI Developer</p>
+                        <p class="project-desc">An intelligent voice-controlled automation system capable of processing
+                            speech input, interpreting commands, and executing automated workflows in real time.</p>
+                        <ul class="project-highlights">
+                            <li>Voice-to-text processing</li>
+                            <li>Command recognition logic</li>
+                            <li>Task execution automation</li>
+                            <li>API integrations & Modular backend</li>
+                        </ul>
+                        <div class="tech-stack-tags">
+                            <span>Python</span><span>Speech Processing</span><span>API Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-block reveal">
+                    <div class="project-content">
+                        <h3>Spotify Clone</h3>
+                        <p class="role">Full Stack Developer</p>
+                        <p class="project-desc">A fully functional Spotify-inspired web application featuring
+                            authentication, playlist management, and dynamic music player interface.</p>
+                        <ul class="project-highlights">
+                            <li>User authentication system</li>
+                            <li>Playlist creation and management</li>
+                            <li>Interactive music player controls</li>
+                            <li>Dynamic UI rendering & Responsive design</li>
+                        </ul>
+                        <div class="tech-stack-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements">
+            <h2 class="section-title reveal">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal staggered-1">
+                    <div class="achievement-icon">
+                        <span class="counter" data-target="94" data-speed="1000">0</span><span
+                            style="font-size:1.2rem">.4%</span>
+                    </div>
+                    <div class="achievement-text">
+                        <p class="achievement-title">District Topper</p>
+                        <p class="achievement-desc">Class 12 Board Examination</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal staggered-2">
+                    <div class="achievement-icon">
+                        <span class="counter" data-target="8" data-speed="1000">0</span><span
+                            style="font-size:1.2rem">.22</span>
+                    </div>
+                    <div class="achievement-text">
+                        <p class="achievement-title">Branch Topper</p>
+                        <p class="achievement-desc">B.Tech Program - CGPA</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal staggered-3">
+                    <div class="achievement-icon">
+                        <span class="counter" data-target="1" data-speed="500">0</span><span
+                            style="font-size:1.2rem">st</span>
+                    </div>
+                    <div class="achievement-text">
+                        <p class="achievement-title">Senior Under Officer</p>
+                        <p class="achievement-desc">Highest cadet rank in NCC unit</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal staggered-4">
+                    <div class="achievement-icon" style="font-size: 2.5rem;">
+                        🎖️
+                    </div>
+                    <div class="achievement-text">
+                        <p class="achievement-title">IMA Attachment Camp</p>
+                        <p class="achievement-desc">Prestigious attendance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications">
+            <h2 class="section-title reveal">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card reveal glow-on-hover">
+                    <div class="cert-icon"><i class="fab fa-android"></i></div>
+                    <div class="cert-info">
+                        <h3>Google Android</h3>
+                        <p>EduSkills Tech Camp</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal glow-on-hover staggered-1">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="cert-info">
+                        <h3>Technology Job Simulation</h3>
+                        <p>Deloitte</p>
+                    </div>
+                </div>
+                <div class="cert-card reveal glow-on-hover staggered-2">
+                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                    <div class="cert-info">
+                        <h3>GenAI Powered Data Analytics</h3>
+                        <p>Tata iQ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages" class="languages">
+            <h2 class="section-title reveal">Languages</h2>
+            <div class="lang-grid">
+                <div class="lang-card reveal">
+                    <h3>English</h3>
+                    <p>Professional Working</p>
+                </div>
+                <div class="lang-card reveal staggered-1">
+                    <h3>Hindi</h3>
+                    <p>Native</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume CTA Section -->
+        <section id="resume" class="resume-cta">
+            <div class="cta-content reveal">
+                <h2>Ready to Dive Deeper?</h2>
+                <p>Download my complete resume to explore my technical expertise, leadership experience, and project
+                    contributions in detail.</p>
+                <a href="#" class="btn btn-primary btn-large glow-on-hover">Download Resume</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact" class="contact">
+            <div class="footer-bg-grid"></div>
+            <div class="footer-content reveal">
+                <h2>Let’s Connect</h2>
+                <div class="contact-links">
+                    <a href="mailto:udaykanojiya91@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> udaykanojiya91@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/uday-kanojiya-40139a290" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/udaykanojiya" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="tel:+919303383528" class="contact-link">
+                        <i class="fas fa-phone"></i> +91 9303383528
+                    </a>
+                </div>
+                <p class="copyright">© 2026 Uday Kanojiya. Structured. Professional. Built for scale.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
